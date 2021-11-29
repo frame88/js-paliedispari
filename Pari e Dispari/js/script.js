@@ -15,3 +15,27 @@ In un secondo momento creiamo delle funzioni per i numeri random e per il check 
 4.sommiamo random a Number
 dichiariamo chi ha vinto
 */
+
+let type = prompt('preferisci i pari o i dispari? ');
+let number = parseInt(prompt('inserisci un numero compreso tra 1 e 5: '));;
+giocajouer(type,number);
+
+function giocajouer(par1, par2) {  
+    let numberpc = Math.floor(Math.random() * 5) + 1;
+    if ((par2 + numberpc) % 2 == 0) {
+        if (par1 == 'pari') {
+            console.log('hai vinto');
+        }
+        else {
+            console.log('ha vinto il pc')
+        }
+    }
+    else {
+        if (par1 == 'dispari') {
+            console.log('hai vinto');
+        }
+        else {
+            console.log('ha vinto il pc')
+        }
+    }
+}

@@ -13,9 +13,17 @@ Creare una funzione per capire se la parola inserita è palindroma
 */
 
 let word = prompt('inserisci una parola: ');
+let acc = 0;
+
 for (let i = 0; i < word.length; i++) {
     if (word[i] == word[word.length - (i + 1)]) {
-       console.log(word[i]);
+        acc += 1;
    }
 }
 
+if (acc == word.length) {
+    console.log('palindroma');
+}
+else {
+    console.log('non è palindroma');
+}

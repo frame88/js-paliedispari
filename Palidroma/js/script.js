@@ -13,6 +13,7 @@ Creare una funzione per capire se la parola inserita è palindroma
 */
 
 let word = prompt('inserisci una parola: ');
+word = word.replaceAll(' ','');
 let exercise = palindroma(word);
 console.log(exercise);
 
@@ -33,6 +34,7 @@ function palindroma(par1) {
         esito = 'non è palindroma';
     }
     return esito;
+    
 }
 
 

@@ -13,7 +13,7 @@ Creare una funzione per capire se la parola inserita è palindroma
 */
 
 let word = prompt('inserisci una parola: ');
-word = word.replaceAll(' ','');
+word = word.replaceAll(' ','').toLowerCase();
 let exercise = palindroma(word);
 console.log(exercise);
 
